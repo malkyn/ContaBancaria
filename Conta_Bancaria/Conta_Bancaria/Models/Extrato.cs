@@ -16,12 +16,12 @@ namespace ContaCorrente.Models
 
         [BsonElement("Valor")]
         public double Valor { get; set; }
-
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         public DateTime? CriadoEm { get; set; }
 
         [BsonElement("Tipo")]
         public string? Tipo { get; set; }
-
+        [BsonDateTimeOptions(Kind = DateTimeKind.Local)]
         public DateTime? DeletadoEm { get; set; }
 
     }

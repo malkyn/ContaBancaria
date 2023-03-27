@@ -24,7 +24,7 @@ namespace ContaCorrente.Services
 
         public Extrato Transacao(Extrato user)
         {
-            user.CriadoEm = DateTime.Now;
+            user.CriadoEm = DateTime.Now.Date;
             _operacaoCollection.InsertOne(user);
             return user;
         }
